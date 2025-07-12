@@ -1,145 +1,54 @@
-:root {
-  --page-text: rgb(201, 200, 201);
-}
-
-html {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Helvetica Neue', Arial, sans-serif;
-  scroll-behavior: smooth;
-}
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-header {
-  z-index: 1;
-  position: sticky;
-  top: 0;
-  margin: 0;
-  height: 6rem;
-  background: linear-gradient(
-  to bottom, 
-  rgb(190, 49, 68) 0%, 
-  rgb(190, 49, 68) 80%, 
-  rgb(3, 3, 3) 100%
-);
-}
-#welcome-section {
-  height: 100vh; 
-}
-#nav-bar {
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: rgb(231, 229, 231);
-  text-transform: uppercase;
-  padding-bottom: 0.9rem; 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: right;
-  gap: 1%; 
-  margin: 0 auto; 
-  padding: 1.8rem 2rem;
-}
-#nav-bar a {
-  text-decoration: none;
-  color: inherit;
-  padding: 2.7rem 1rem;
-  transition: background 0.3s ease;
-}
-#nav-bar a:hover {
-  background-color: #45567d;
-  background: linear-gradient(
-  to bottom, 
-  #45567d 0%, 
-  #45567d 80%, 
-  rgb(3, 3, 3) 100%
-);  
-  padding: 2.7rem 1rem;  
-  margin: 0;
-}
-body {
-background: linear-gradient(160deg, rgb(3, 3, 3), rgb(53, 52, 53));
-min-width: 400px;
-}
-h1 {
-  color: var(--page-text);
-  font-size: 5rem;
-  margin: 10rem 5rem;
-}
-#projects {
-  background-color: #45567d;
-  color: var(--page-text);
-  font-size: 1.5rem;
-  text-align: center;
-  padding-top: 1rem; 
-}
-.project-tile {
-  width: 30rem; 
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 1rem;
-  border: 4px solid rgb(50, 56, 54);
-  display: flex;
-  flex-direction: column;
-}
-
-.picture {
-  width: 100%;
-  height: 20rem; 
-  object-fit: cover; 
-  display: block;
-}
-
-.caption {
-  padding: 1.3rem 1rem; 
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center;
-  background-color: rgb(50, 56, 54);
-  color: rgb(231, 229, 231);
-}
-
-.caption::before,
-.caption::after {
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  color: orange;
-  font-weight: bold;
-}
-
-.caption::before {
-  content: "< ";
-  margin-right: 0.3rem;
-}
-
-.caption::after {
-  content: " />";
-  margin-left: 0.3rem;
-}
-
-.project-tile:hover .caption::before,
-.project-tile:hover .caption::after {
-  opacity: 1;
-}
-.project-tile:hover {
-transform: scale(1.05);
-transition: transform 0.2s linear 0ms;
-}
-.project-tile {
-  transition: transform 0.2s linear; 
-}
-a {
-  text-decoration: none;
-}
-#treasures {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 1rem;
-  padding: 2rem;
-  justify-items: center; 
-}
-#projects h2 {
-  margin-top: 2rem; 
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title id="title">Nelson Mandela Tribute page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <main id="main">
+      <h1>Nelson R. Mandela</h1>
+      <p id="quote">"The greatest glory in living lies not in never falling, but in rising every time we fall."</p>
+<div id="insertion">
+<figure id="img-div">
+<img id="image" src="https://www.polkamagazine.com/app/uploads/2019/04/Mandela-Cell-1994-1300x861.jpg" alt="Nelson Mandela sitting in his prison cell in 1994 after his release">
+<figcaption id="img-caption">February 1994. Nelson Mandela, during his first visit as a free man to Robben Island, where he was imprisoned for eighteen years.</figcaption>
+</figure>
+</div>
+<div class="centered-text"> 
+<section id="tribute-info">
+<h2>Here's a time line of Nelson Mandela's life:</h2>
+<ul class="name">
+<li><b>1918</b> – Born on July 18 in Mvezo, a small village in the Eastern Cape of South Africa.</li>
+<li><b>1939</b> – Begins law studies at the University of Fort Hare, but is expelled for joining a student protest.</li>
+<li><b>1941</b> – Moves to Johannesburg and works as a mine security officer while studying law part-time.</li>
+<li><b>1943</b> – Joins the African National Congress (ANC), becoming active in the struggle against apartheid.</li>
+<li><b>1944</b> – Co-founds the ANC Youth League, promoting more radical tactics to end racial discrimination.</li>
+<li><b>1952</b> – Launches the Defiance Campaign, encouraging nonviolent resistance to apartheid laws.</li>
+<li><b>1956</b> – Arrested and charged with treason along with 155 others; acquitted in 1961.</li>
+<li><b>1961</b> – Helps found Umkhonto we Sizwe (Spear of the Nation), the armed wing of the ANC.</li>
+<li><b>1962</b> – Arrested while traveling abroad; sentenced to five years for leaving the country illegally and inciting workers.</li>
+<li><b>1964</b> – Sentenced to life imprisonment during the Rivonia Trial for sabotage and conspiracy against the government.</li>
+<li><b>1964–1990</b> – Imprisoned mostly on Robben Island, enduring harsh conditions but becoming a symbol of resistance.</li>
+<li><b>1976</b> – Soweto Uprising against apartheid sparks global awareness and pressure for Mandela’s release.</li>
+<li><b>1985</b> – Rejects a government offer for conditional release, insisting on full abolition of apartheid.</li>
+<li><b>1990</b> – Released from prison on February 11 after 27 years behind bars.</li>
+<li><b>1991</b> – Elected President of the ANC as the organization is unbanned.</li>
+<li><b>1993</b> – Shares the Nobel Peace Prize with F.W. de Klerk for their efforts to peacefully end apartheid.</li>
+<li><b>1994</b> – Becomes South Africa’s first Black president, overseeing the transition to democracy.</li>
+<li><b>2013</b> – dies at the age of 95.</li>
+</ul>
+</section>
+</div>
+<blockquote>
+    <i>
+        <p>"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment." 
+            <cite>-- Ralph Waldo Emerson on individuality.</cite>
+        </i>
+    </p>
+</blockquote>
+<p id="angry"><b>If you have time, you should read more about this incredible human being on his <a href="https://en.wikipedia.org/wiki/Nelson_Mandela" id="tribute-link" target="_blank">Wikipedia entry</a>.</b></p>
+    </main> 
+  </body>  
+</html>
