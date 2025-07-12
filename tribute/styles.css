@@ -1,0 +1,76 @@
+#main {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+'Helvetica Neue', Arial, sans-serif;
+text-align: center;
+background-color: rgb(220,220,220);
+border-radius: 5px;
+padding: 2rem;
+}
+#image {
+  width: 100%;
+  border-radius: 15px;
+padding-bottom: 0.4rem;
+max-width: 100%; 
+  max-height: 600px; 
+  height: auto;
+  display: block;
+}
+#quote {
+  padding-bottom: 1.5rem;
+}
+#insertion {
+background-color: rgb(245, 245, 245);
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 0.1rem;
+  border-radius: 10px;
+}
+#img-caption {
+  padding-bottom: 0.8rem;
+  line-height: 1.5rem;
+}
+ h2 {
+   margin: 3rem 0 2rem 0;
+ }
+
+ .name {
+   width: 90%;
+   margin: 0 auto;
+   text-align: center;
+ }
+ li {
+   margin: 1.7rem;
+   text-align: left;
+   line-height: 1.5rem;
+ }
+
+blockquote {
+  max-width: 800px; 
+  margin: 3rem auto; 
+  padding: 1rem; 
+  text-align: center;
+  word-wrap: break-word; 
+  background-color: rgba(245, 245, 245, 0.8);
+  border-radius: 20px;
+}
+cite {
+  padding: 1rem;
+  display: block;
+}
+
+#angry {
+  font-size: 1.3rem;
+}
+a:hover {
+  color: blue;
+}
+a:active {
+  color: red;
+}
+.centered-text {
+  width: 100%; 
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  word-wrap: break-word; 
+}
